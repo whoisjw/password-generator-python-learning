@@ -18,5 +18,9 @@ file = open('passwords.txt', 'a')
 
 for i in range(int(pwdAmount)):
     pwd = genPwd(int(pwdLen))
-    file.write(pwd)
+    file.write(pwd + "\n")
+
+print("Passwords saved to passwords.txt")
+
+file.close()
 
